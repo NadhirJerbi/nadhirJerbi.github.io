@@ -56,18 +56,6 @@
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
-    h2 {
-      color: var(--secondary);
-      margin-bottom: 15px;
-      font-size: 1.8rem;
-    }
-
-    h3 {
-      color: var(--dark);
-      margin-bottom: 15px;
-      font-size: 1.3rem;
-    }
-
     .header-info {
       display: flex;
       justify-content: space-between;
@@ -116,7 +104,6 @@
       outline: none;
     }
 
-    /* Buttons */
     .btn {
       padding: 12px 24px;
       border: none;
@@ -146,41 +133,14 @@
       color: white;
     }
 
-    .btn-secondary:hover {
-      background: #5a6268;
-    }
-
     .btn-success {
       background: var(--success);
       color: white;
     }
 
-    .btn-success:hover {
-      background: #3aa8d0;
-    }
-
     .btn-danger {
       background: var(--danger);
       color: white;
-    }
-
-    .btn-danger:hover {
-      background: #e11574;
-    }
-
-    .btn-warning {
-      background: var(--warning);
-      color: white;
-    }
-
-    .btn-warning:hover {
-      background: #e0861b;
-    }
-
-    .btn:disabled {
-      background: #cccccc;
-      cursor: not-allowed;
-      transform: none;
     }
 
     /* Timer */
@@ -201,20 +161,11 @@
       font-weight: 700;
     }
 
-    .timer-warning {
-      color: var(--warning);
-      animation: pulse 1s infinite;
-    }
-
-    .timer-danger {
-      color: var(--danger);
-      animation: pulse 0.5s infinite;
-    }
+    .timer-warning { color: var(--warning); animation: pulse 1s infinite; }
+    .timer-danger { color: var(--danger); animation: pulse 0.5s infinite; }
 
     @keyframes pulse {
-      0% { opacity: 1; }
-      50% { opacity: 0.7; }
-      100% { opacity: 1; }
+      0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; }
     }
 
     /* Quiz Navigation */
@@ -225,15 +176,8 @@
       margin-top: 20px;
     }
 
-    .nav-buttons {
-      display: flex;
-      gap: 10px;
-    }
-
-    .question-counter {
-      font-weight: 600;
-      color: var(--gray);
-    }
+    .nav-buttons { display: flex; gap: 10px; }
+    .question-counter { font-weight: 600; color: var(--gray); }
 
     /* Quiz Container */
     #quiz-container {
@@ -257,10 +201,7 @@
       margin-bottom: 15px;
     }
 
-    .question-text {
-      flex: 1;
-      margin-right: 15px;
-    }
+    .question-text { flex: 1; margin-right: 15px; }
 
     .mark-review {
       background: transparent;
@@ -271,18 +212,10 @@
       transition: transform 0.3s;
     }
 
-    .mark-review:hover {
-      transform: scale(1.2);
-    }
+    .mark-review:hover { transform: scale(1.2); }
+    .marked { color: var(--warning); }
 
-    .marked {
-      color: var(--warning);
-    }
-
-    .answers {
-      list-style: none;
-      padding: 0;
-    }
+    .answers { list-style: none; padding: 0; }
 
     .answers li {
       margin: 10px 0;
@@ -315,10 +248,7 @@
     }
 
     /* Progress Bar */
-    .progress-container {
-      margin: 20px 0;
-    }
-
+    .progress-container { margin: 20px 0; }
     .progress-bar {
       height: 10px;
       background: #e9ecef;
@@ -342,10 +272,7 @@
     }
 
     /* Results */
-    .result-summary {
-      text-align: center;
-      padding: 20px;
-    }
+    .result-summary { text-align: center; padding: 20px; }
 
     .score-circle {
       width: 150px;
@@ -371,15 +298,8 @@
       font-weight: bold;
     }
 
-    .score-percent {
-      font-size: 1.8rem;
-      color: var(--dark);
-    }
-
-    .score-text {
-      font-size: 0.9rem;
-      color: var(--gray);
-    }
+    .score-percent { font-size: 1.8rem; color: var(--dark); }
+    .score-text { font-size: 0.9rem; color: var(--gray); }
 
     .stats {
       display: flex;
@@ -388,27 +308,11 @@
       margin: 20px 0;
     }
 
-    .stat {
-      text-align: center;
-    }
-
-    .stat-value {
-      font-size: 2rem;
-      font-weight: bold;
-    }
-
-    .stat-correct {
-      color: var(--success);
-    }
-
-    .stat-wrong {
-      color: var(--danger);
-    }
-
-    .stat-label {
-      font-size: 0.9rem;
-      color: var(--gray);
-    }
+    .stat { text-align: center; }
+    .stat-value { font-size: 2rem; font-weight: bold; }
+    .stat-correct { color: var(--success); }
+    .stat-wrong { color: var(--danger); }
+    .stat-label { font-size: 0.9rem; color: var(--gray); }
 
     #filter-buttons {
       display: flex;
@@ -449,40 +353,15 @@
       border-left-color: #dc3545;
     }
 
-    .results-container {
-      margin-top: 20px;
-    }
+    .results-container { margin-top: 20px; }
 
-    /* Responsive */
     @media (max-width: 768px) {
-      .app-card {
-        padding: 20px;
-      }
-      
-      h1 {
-        font-size: 2rem;
-      }
-      
-      .header-info {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-      }
-      
-      #navigation {
-        flex-direction: column;
-        gap: 15px;
-      }
-      
-      .nav-buttons {
-        width: 100%;
-        justify-content: space-between;
-      }
-      
-      .stats {
-        flex-direction: column;
-        gap: 15px;
-      }
+      .app-card { padding: 20px; }
+      h1 { font-size: 2rem; }
+      .header-info { flex-direction: column; gap: 10px; text-align: center; }
+      #navigation { flex-direction: column; gap: 15px; }
+      .nav-buttons { width: 100%; justify-content: space-between; }
+      .stats { flex-direction: column; gap: 15px; }
     }
   </style>
 </head>
@@ -491,7 +370,7 @@
     <h1><i class="fas fa-brain"></i> Scrum Master Quiz</h1>
     
     <div class="header-info">
-      <div id="user-info">Welcome, Quiz Taker!</div>
+      <div id="user-info">Welcome to Scrum Quiz!</div>
       <div id="timer" style="display:none;">
         <i class="fas fa-clock"></i> Time Left: <span id="time-remaining">--:--</span>
       </div>
@@ -510,12 +389,12 @@
         
         <div class="option-group">
           <label for="num-questions">Number of Questions</label>
-          <input type="number" id="num-questions" min="5" max="80" value="80">
+          <input type="number" id="num-questions" min="5" max="50" value="10">
         </div>
         
         <div class="option-group">
           <label for="time-per-question">Time per Question (seconds)</label>
-          <input type="number" id="time-per-question" min="10" max="120" value="45" disabled>
+          <input type="number" id="time-per-question" min="10" max="120" value="45">
         </div>
         
         <div class="option-group">
@@ -541,7 +420,7 @@
         </div>
         <div class="progress-info">
           <span>Progress: <span id="progress-text">0%</span></span>
-          <span>Question <span id="current-q">1</span> of <span id="total-qs">20</span></span>
+          <span>Question <span id="current-q">1</span> of <span id="total-qs">10</span></span>
         </div>
       </div>
       
@@ -574,6 +453,10 @@
       <div id="result"></div>
       <div id="results-container" class="results-container"></div>
     </div>
+
+    <footer style="text-align: center; color: white; margin-top: 20px; opacity: 0.8;">
+      <p>Hosted on GitHub Pages</p>
+    </footer>
   </div>
 
   <script>
@@ -664,7 +547,13 @@
     // Load questions from JSON
     async function loadQuiz(totalQuestions, questionType) {
       try {
+        // Use relative path for GitHub Pages
         const response = await fetch('quiz.json');
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
         allQuestions = await response.json();
 
         if (!allQuestions || allQuestions.length === 0) {
@@ -673,35 +562,17 @@
         }
 
         // Filter questions by type
+        let filteredQuestions = [];
         if (questionType === 'single') {
-          questions = allQuestions.filter(q => !q.is_multi_choice);
+          filteredQuestions = allQuestions.filter(q => !q.is_multi_choice);
         } else if (questionType === 'multi') {
-          questions = allQuestions.filter(q => q.is_multi_choice);
+          filteredQuestions = allQuestions.filter(q => q.is_multi_choice);
         } else {
-          // Mixed - maintain the original ratio
-          const multiQuestions = allQuestions.filter(q => q.is_multi_choice);
-          const singleQuestions = allQuestions.filter(q => !q.is_multi_choice);
-          
-          let multiCount = Math.floor(totalQuestions * 0.25);
-          let singleCount = totalQuestions - multiCount;
-          
-          // Adjust if we don't have enough of one type
-          if (multiCount > multiQuestions.length) {
-            multiCount = multiQuestions.length;
-            singleCount = Math.min(totalQuestions - multiCount, singleQuestions.length);
-          } else if (singleCount > singleQuestions.length) {
-            singleCount = singleQuestions.length;
-            multiCount = Math.min(totalQuestions - singleCount, multiQuestions.length);
-          }
-          
-          const selectedMulti = shuffleArray(multiQuestions).slice(0, multiCount);
-          const selectedSingle = shuffleArray(singleQuestions).slice(0, singleCount);
-          
-          questions = shuffleArray([...selectedMulti, ...selectedSingle]);
+          filteredQuestions = allQuestions;
         }
         
-        // Limit to requested number
-        questions = questions.slice(0, totalQuestions);
+        // Shuffle and limit questions
+        questions = shuffleArray(filteredQuestions).slice(0, totalQuestions);
         
         // Initialize user selections
         questions.forEach(q => {
@@ -712,8 +583,35 @@
         totalQsElement.textContent = questions.length;
         
       } catch (error) {
-        quizContainer.innerHTML = `<p style="color:red">❌ Error loading quiz: ${error}</p>`;
+        console.error('Error loading quiz:', error);
+        quizContainer.innerHTML = `<p style="color:red">❌ Error loading quiz: ${error.message}</p>`;
+        
+        // Fallback: Use sample questions if quiz.json fails
+        questions = generateSampleQuestions(10);
+        questions.forEach(q => {
+          q.userSelected = [];
+        });
+        totalQsElement.textContent = questions.length;
       }
+    }
+
+    // Generate sample questions for demo
+    function generateSampleQuestions(count) {
+      const sampleQuestions = [];
+      for (let i = 1; i <= count; i++) {
+        sampleQuestions.push({
+          question: `Sample Question ${i}: What is Scrum?`,
+          is_multi_choice: Math.random() > 0.5,
+          answers: [
+            "A framework for agile development",
+            "A programming language",
+            "A project management methodology",
+            "A type of meeting"
+          ],
+          correct_answers: ["A framework for agile development"]
+        });
+      }
+      return sampleQuestions;
     }
 
     // Render current question
@@ -799,7 +697,7 @@
         markedQuestions.add(index);
       }
       updateMarkedCount();
-      renderQuestion(index); // Re-render to update bookmark icon
+      renderQuestion(index);
     }
 
     // Update marked questions count
@@ -847,9 +745,9 @@
         updateTimerDisplay();
         
         // Timer warnings
-        if (totalSeconds === 300) { // 5 minutes
+        if (totalSeconds === 300) {
           timeRemainingElement.classList.add('timer-warning');
-        } else if (totalSeconds === 60) { // 1 minute
+        } else if (totalSeconds === 60) {
           timeRemainingElement.classList.remove('timer-warning');
           timeRemainingElement.classList.add('timer-danger');
         }
@@ -940,11 +838,8 @@
       // Add event listeners to filter buttons
       document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.addEventListener('click', function() {
-          // Update button active state
           document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
           this.classList.add('active');
-          
-          // Filter results
           renderResults(this.getAttribute('data-filter'));
         });
       });
