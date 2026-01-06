@@ -65,7 +65,18 @@
           <span>Question <span id="current-q">1</span> of <span id="total-qs">20</span></span>
         </div>
       </div>
-      
+
+      <!-- Question Navigation -->
+      <div class="navigation-panel" id="navigation-panel">
+        <div class="nav-header">
+          <h3>Question Navigation</h3>
+          <button class="btn btn-small" id="toggle-nav">
+            <i class="fas fa-chevron-up"></i>
+          </button>
+        </div>
+        <div class="question-grid" id="question-grid"></div>
+      </div>
+
       <div id="quiz-container"></div>
       
       <div id="navigation">
@@ -96,12 +107,28 @@
       <div id="results-container" class="results-container"></div>
     </div>
   </div>
-    <footer style="text-align: center; color: white; margin-top: 20px; opacity: 0.8;">
-      Made with ❤️by 
-      <a href="https://github.com/nadhirjerbi" target="_blank" rel="noopener">
-        Nadhir Jerbi
-      </a>
-    </footer>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-text">
+        Crafted with passion by 
+        <a href="https://github.com/nadhirjerbi" target="_blank" rel="noopener" class="footer-link">
+          <span class="author-name">Nadhir Jerbi</span>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/nadhirjerbi" target="_blank" rel="noopener" class="social-link" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" class="social-link" title="Portfolio">
+          <i class="fas fa-globe"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jerbi-nadhir/" class="social-link" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
